@@ -7,6 +7,9 @@
 - 开发入门流程指引
 
 - 组件模块  
+  	- [电池模块](component/BatteryManager.md)
+  		- [BatteryStateInfo](component/BatteryStateInfo.md)
+  		- [ExtBatteryStateInfo](component/ExtBatteryStateInfo.md)
 	- [RTK模块](component/RTKManager.md)  
 		- [RtkEntryInfo](component/RtkEntryInfo.md)
 
