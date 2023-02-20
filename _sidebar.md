@@ -12,6 +12,7 @@
 		- [ExtBatteryStateInfo](component/ExtBatteryStateInfo.md)
 	- [RTK模块](component/RTKManager.md)  
 		- [RtkEntryInfo](component/RtkEntryInfo.md)
+		- [NtripAuthInfo](component/NtripAuthInfo.md)
 	- [飞控文件系统模块](component/SystemManager.md)
 		- [FlightLogEntryInfo](component/FlightLogEntryInfo.md)
 		- [LinkNodeTransmitRateInfo](component/LinkNodeTransmitRateInfo.md)
