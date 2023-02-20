@@ -8,6 +8,7 @@
 
 - 组件模块  
 	- [RTK模块](component/RTKManager.md)  
+		- [RtkEntryInfo](component/RtkEntryInfo.md)
 
 - 常见问题
 
