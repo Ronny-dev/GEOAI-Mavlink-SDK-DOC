@@ -6,21 +6,7 @@
 
 - 开发入门流程指引
 
-- 组件模块
-	- [飞控模块](component/FlyControllerManager.md)
-		- [FlyControllerStateInfo](component/FlyControllerStateInfo.md)
-		- [DiagnosticsStateInfo](component/DiagnosticsStateInfo.md)
-	- [电池模块](component/BatteryManager.md)
-		- [BatteryStateInfo](component/BatteryStateInfo.md)
-		- [ExtBatteryStateInfo](component/ExtBatteryStateInfo.md)
+- 组件模块  
 	- [RTK模块](component/RTKManager.md)  
-		- [RtkEntryInfo](component/RtkEntryInfo.md)
-		- [NtripAuthInfo](component/NtripAuthInfo.md)
-	- [飞控文件系统模块](component/SystemManager.md)
-		- [FlightLogEntryInfo](component/FlightLogEntryInfo.md)
-		- [LinkNodeTransmitRateInfo](component/LinkNodeTransmitRateInfo.md)
-		- [ParamValueInfo](component/ParamValueInfo.md)
 
 - 常见问题
-
-
