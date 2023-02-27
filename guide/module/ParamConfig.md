@@ -48,10 +48,19 @@ SDK内部有部分接口需要使用[参数配置]进行实现，SDK已经完成
 - 飞控返航高度
 - 飞控返航模式
 
-### 框架实现
+### SampleDemo
+
+---
+
+用户可以访问GCS的示例代码，在MainActivity中已经实现了一套仿照QGC UI设计的参数配置页面，其中包含了参数的获取和配置功能。
+[GCS](https://github.com/Ronny-dev/GCS)
+
+### 协议实现
 
 ---
 
 [PX4自驾仪参数设置](https://docs.px4.io/main/zh/advanced/parameters_and_configurations.html)
+
+[MAV Parameter Protocol](https://mavlink.io/en/services/parameter.html)
 
 Parameter.json中文参考
