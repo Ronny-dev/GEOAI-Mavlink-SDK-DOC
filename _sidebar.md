@@ -5,6 +5,10 @@
 	- [简要说明](base/SDK简要说明.md)
 
 - 开发入门流程指引
+	- [入门指南](guide/DevelopmentGuide.md)
+	- 创建工程
+		- AndroidStudio配置工程
+		- 开发注意事项
 
 - 组件模块
 	- [飞控模块](component/FlyControllerManager.md)
