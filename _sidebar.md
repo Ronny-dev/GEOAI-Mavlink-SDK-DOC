@@ -11,6 +11,7 @@
 		- [开发注意事项](guide/MattersNeedAttention.md)
 	- 开发教程
 		- [RTK教程](guide/module/RTK.md)
+		- [参数配置教程](guide/module/ParamConfig.md)
 
 - 组件模块
 	- [飞控模块](component/FlyControllerManager.md)
