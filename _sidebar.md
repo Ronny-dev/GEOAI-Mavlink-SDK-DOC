@@ -9,6 +9,8 @@
 	- 创建工程
 		- [AndroidStudio配置工程](guide/AndroidStudioGuide.md)
 		- [开发注意事项](guide/MattersNeedAttention.md)
+	- 开发教程
+		- [RTK教程](guide/module/RTK.md)
 
 - 组件模块
 	- [飞控模块](component/FlyControllerManager.md)
