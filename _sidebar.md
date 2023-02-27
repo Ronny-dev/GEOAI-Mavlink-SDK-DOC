@@ -7,7 +7,7 @@
 - 开发入门流程指引
 	- [入门指南](guide/DevelopmentGuide.md)
 	- 创建工程
-		- AndroidStudio配置工程
+		- AndroidStudio配置工程(guide/AndroidStudioGuide.md)
 		- 开发注意事项
 
 - 组件模块
