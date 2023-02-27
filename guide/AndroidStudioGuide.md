@@ -51,19 +51,19 @@ dependencies {
 目前SDK暂未上传Maven平台，无法进行自动依赖的形式集成，需要用户**自行添加相关依赖库**
 
 ```groovy
-		//webRTC
+    //webRTC
     implementation 'org.webrtc:google-webrtc:1.0.32006'
     //MQTT
     implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.4'
-		//ASPECTJ
+    //ASPECTJ
     implementation 'org.aspectj:aspectjrt:1.9.6'
     //MMKV
     api 'com.tencent:mmkv:1.2.5'
-		//GSON
+	//GSON
     api 'com.google.code.gson:gson:2.8.5'
     //日志工具
     api 'com.github.xuexiangjys:XLog:1.1.5'
-		//rxjava
+	//rxjava
     api "io.reactivex.rxjava2:rxjava:2.2.20"
     api 'io.reactivex.rxjava2:rxandroid:2.1.0'
 ```
