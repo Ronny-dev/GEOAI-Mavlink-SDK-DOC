@@ -29,6 +29,7 @@
 	- [电池模块](component/BatteryManager.md)
 		- [BatteryStateInfo](component/BatteryStateInfo.md)
 		- [ExtBatteryStateInfo](component/ExtBatteryStateInfo.md)
+	- [相机模块](component/CameraManager.md)
 	- [RTK模块](component/RTKManager.md)
 		- [RtkEntryInfo](component/RtkEntryInfo.md)
 		- [NtripAuthInfo](component/NtripAuthInfo.md)
