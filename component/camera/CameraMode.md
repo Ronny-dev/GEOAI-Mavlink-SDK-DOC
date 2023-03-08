@@ -1,0 +1,5 @@
+### CameraMode
+
+#### CAMERA_MODE_IMAGE(0),
+#### CAMERA_MODE_VIDEO(1),
+#### CAMERA_MODE_UNKNOWN(-1);
