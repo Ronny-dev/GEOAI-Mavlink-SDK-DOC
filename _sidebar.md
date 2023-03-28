@@ -49,3 +49,5 @@
 		- [MeshStatus](component/MeshStatus.md)
 
 - 常见问题
+- 其他
+	- [无线电模块出厂配置](other/WirelessConfigureGuide.md)
