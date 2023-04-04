@@ -33,6 +33,7 @@
 请将获取的开发包解压
 
 解压后，会得到一个aar文件，请您将aar文件添加到工程中，操作步骤请参考[AndroidStudio开发指南](https://developer.android.com/studio/projects/android-library?hl=zh-cn)
+开发者也可以通过在线依赖进行SDK集成（推荐），操作步骤请参考[AndroidStudio开发指南](https://developer.android.com/studio/projects/android-library?hl=zh-cn)
 
 ### 第五步：Hello SDK
 
@@ -76,7 +77,7 @@
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
 
-2、Application接入：
+2、~~Application接入~~（v0.1.6开始无需application接入）：
 
 ```java
 public void onCreate() {
