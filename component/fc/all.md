@@ -1,118 +1,117 @@
-##INTERFACE
-###setFlyControllerStateListener
+### setFlyControllerStateListener
 |方法名|setFlyControllerStateListener|
 | :--------  | :-----  |
 |描述||
 |返回值|void|
 |请求参数|listener（listener）
 |设置飞行器状态监听{link|com.geoai.mavlink.geoainet.flycontroller.info.FlyControllerStateInfo}|
-###setDiagnosticsStateListener
+### setDiagnosticsStateListener
 |方法名|setDiagnosticsStateListener|
 | :--------  | :-----  |
 |描述|* 设置飞行器HMS系统状态监听回调（健康管理系统）|
 |返回值|void|
 |请求参数|listener（listener）
-###startAircraftTakeoff
+### startAircraftTakeoff
 |方法名|startAircraftTakeoff|
 | :--------  | :-----  |
 |描述|* 发送无人机起飞指令；无人机会起飞到1.2m后悬停|
 |返回值|void|
 |请求参数|callback（callback）
-###startAircraftTakeoff
+### startAircraftTakeoff
 |方法名|startAircraftTakeoff|
 | :--------  | :-----  |
 |描述|* 发送无人机起飞指令|
 |返回值|void|
 |请求参数|altitude（起飞悬停高度）
 |请求参数|callback（callback）
-###startAircraftLand
+### startAircraftLand
 |方法名|startAircraftLand|
 | :--------  | :-----  |
 |描述|* 发送无人机降落指令|
 |返回值|void|
 |请求参数|callback（callback）
-###stopAircraftLand
+### stopAircraftLand
 |方法名|stopAircraftLand|
 | :--------  | :-----  |
 |描述|* 发送无人机取消降落指令|
 |返回值|void|
 |请求参数|callback（callback）
-###startAircraftGoHome
+### startAircraftGoHome
 |方法名|startAircraftGoHome|
 | :--------  | :-----  |
 |描述|* 发送无人机返航指令；无人机会先升高到返航高度后返航|
 |返回值|void|
 |请求参数|callback（callback）
-###startAircraftReturn
+### startAircraftReturn
 |方法名|startAircraftReturn|
 | :--------  | :-----  |
 |描述|* 发送无人机返航指令；具体返航动作详看说明书|
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|type（返航模式）
-###startAircraftReturnAssignRally
+### startAircraftReturnAssignRally
 |方法名|startAircraftReturnAssignRally|
 | :--------  | :-----  |
 |描述|* 发送无人机返航指令；前往指定的备降点|
 |返回值|void|
 |请求参数|index（index）
 |请求参数|callback（callback）
-###stopAircraftGoHome
+### stopAircraftGoHome
 |方法名|stopAircraftGoHome|
 | :--------  | :-----  |
 |描述|* 发送无人机取消返航指令|
 |返回值|void|
 |请求参数|callback（callback）
-###setGoHomeAltitude
+### setGoHomeAltitude
 |方法名|setGoHomeAltitude|
 | :--------  | :-----  |
 |描述|* 设置无人机返航高度|
 |返回值|void|
 |请求参数|altitude（返航高度）
 |请求参数|callback（callback）
-###getGoHomeAltitude
+### getGoHomeAltitude
 |方法名|getGoHomeAltitude|
 | :--------  | :-----  |
 |描述|* 获取无人机返航高度|
 |返回值|void|
 |请求参数|callback（callback）
-###getGoHomeLocation
+### getGoHomeLocation
 |方法名|getGoHomeLocation|
 | :--------  | :-----  |
 |描述|* 获取无人机当前返航点坐标|
 |返回值|void|
 |请求参数|callback（callback）
-###stopAllAction
+### stopAllAction
 |方法名|stopAllAction|
 | :--------  | :-----  |
 |描述|* 终止飞行器动作指令并悬停|
 |返回值|void|
 |请求参数|callback（callback）
-###startForceLanding
+### startForceLanding
 |方法名|startForceLanding|
 | :--------  | :-----  |
 |描述|* 发送无人机强制降落（不会进入视觉降落程序）|
 |返回值|void|
 |请求参数|callback（callback）
-###setDroneArm
+### setDroneArm
 |方法名|setDroneArm|
 | :--------  | :-----  |
 |描述|* 飞机上锁|
 |返回值|void|
 |请求参数|callback（callback）
-###setDroneDisarm
+### setDroneDisarm
 |方法名|setDroneDisarm|
 | :--------  | :-----  |
 |描述|* 飞机解锁|
 |返回值|void|
 |请求参数|callback（callback）
-###setJoyStickEnable
+### setJoyStickEnable
 |方法名|setJoyStickEnable|
 | :--------  | :-----  |
 |描述|* 飞行器启动虚拟摇杆|
 |返回值|void|
 |请求参数|callback（callback）
-###sendJoyStickControl
+### sendJoyStickControl
 |方法名|sendJoyStickControl|
 | :--------  | :-----  |
 |描述|* 发送虚拟摇杆指令（美国手）|
@@ -122,13 +121,13 @@
 |请求参数|y（roll）
 |请求参数|callback（callback）
 |请求参数|z（throttle）
-###getAlternateLandingPoints
+### getAlternateLandingPoints
 |方法名|getAlternateLandingPoints|
 | :--------  | :-----  |
 |描述|* 获取备降点|
 |返回值|void|
 |请求参数|callback（callback）
-###setAlternateLandingPoints
+### setAlternateLandingPoints
 |方法名|setAlternateLandingPoints|
 | :--------  | :-----  |
 |描述|* 设置备降点|
@@ -136,8 +135,8 @@
 |请求参数|callback（callback）
 |请求参数|points（备降点列表）
 ##INFO
-###AircraftDiagnosticsStateInfo
- * hms健康管理系统状态回调
+### AircraftDiagnosticsStateInfo
+* hms健康管理系统状态回调
 
 |名称|描述|
 | :--------  | :----:  |
@@ -145,8 +144,8 @@
 |alertIndex|告警序列|
 |alertLevel|告警等级|
 |timestamp|告警时间|
-###FlyControllerStateInfo
- * 飞控系统状态回调
+### FlyControllerStateInfo
+* 飞控系统状态回调
 
 |名称|描述|
 | :--------  | :----:  |
@@ -173,8 +172,8 @@
 |aircraftReturnMode|飞行器返航路径类型|
 |aircraftReturnState|飞行器返航动作|
 ##ENUM
-###AircraftReturnMode
- * 飞机返航模式枚举类型，用于描述飞机的返航模式。
+### AircraftReturnMode
+* 飞机返航模式枚举类型，用于描述飞机的返航模式。
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -191,8 +190,8 @@
 |RTL_TYPE_BY_PASS_CLOSEST_HOME|10|沿路径返回home点。|
 |RTL_TYPE_BY_PASS_LAND|11|沿路径返回降落点。（如果不存在降落点，则返回home点）|
 |RTL_TYPE_HOME_OR_RALLY|12|直线返回（最近的）home点、备降点。|
-###AircraftReturnState
- * 飞机返航状态枚举类型，用于描述飞机当前的返航状态。
+### AircraftReturnState
+* 飞机返航状态枚举类型，用于描述飞机当前的返航状态。
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |

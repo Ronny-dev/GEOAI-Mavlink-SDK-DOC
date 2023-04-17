@@ -1,13 +1,12 @@
-##INTERFACE
-###setLteStateListener
+### setLteStateListener
 |方法名|setLteStateListener|
 | :--------  | :-----  |
 |描述|* 设置机载电脑LTE模块状态|
 |返回值|void|
 |请求参数|listener（listener）
 ##INFO
-###Rm500HardwareStateInfo
- * 机载电脑4G/5G硬件状态回调
+### Rm500HardwareStateInfo
+* 机载电脑4G/5G硬件状态回调
 
 |名称|描述|
 | :--------  | :----:  |

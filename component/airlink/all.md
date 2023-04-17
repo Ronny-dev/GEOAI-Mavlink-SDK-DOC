@@ -1,73 +1,72 @@
-##INTERFACE
-###getAirLinkState
+### getAirLinkState
 |方法名|getAirLinkState|
 | :--------  | :-----  |
 |描述|* 获取地面电台状态信息|
 |返回值|MeshHelper2.MeshStatus（{link）|
-###void sendATCommand
+### void sendATCommand
 |方法名|void sendATCommand|
 | :--------  | :-----  |
 |描述|* 发送AT指令到连接中的无线电模块|
 |返回值|void|
 |请求参数|at（AT指令）
 |请求参数|callback（callback）
-###setAirLinkStateListener
+### setAirLinkStateListener
 |方法名|setAirLinkStateListener|
 | :--------  | :-----  |
 |描述||
 |返回值|void|
 |请求参数|listener（listener）
 |设置地面电台模块监听的回调{link|com.geoai.mavlink.util.MeshHelper2.MeshStatus}|
-###isAirLinkConnected
+### isAirLinkConnected
 |方法名|isAirLinkConnected|
 | :--------  | :-----  |
 |描述|* 获取当前地面电台是否正常连接|
 |返回值|void|
 |请求参数|callback（callback）
-###getHardwareAirLinkVersion
+### getHardwareAirLinkVersion
 |方法名|getHardwareAirLinkVersion|
 | :--------  | :-----  |
 |描述|* 获取地面电台硬件版本号|
 |返回值|void|
 |请求参数|callback（callback）
-###getAirLinkSerialNumber
+### getAirLinkSerialNumber
 |方法名|getAirLinkSerialNumber|
 | :--------  | :-----  |
 |描述|* 获取地面电台序列号|
 |返回值|void|
 |请求参数|callback（callback）
-###airLinkRestart
+### airLinkRestart
 |方法名|airLinkRestart|
 | :--------  | :-----  |
 |描述|* 地面电台重启|
 |返回值|void|
 |请求参数|callback（callback）
-###setSecurityCode
+### setSecurityCode
 |方法名|setSecurityCode|
 | :--------  | :-----  |
 |描述|* 设置指定的秘钥|
 |返回值|void|
 |请求参数|code（security code）
 |请求参数|callback（callback）
-###getSecurityCode
+### getSecurityCode
 |方法名|getSecurityCode|
 | :--------  | :-----  |
 |描述|* 获取当前无线电密钥|
 |返回值|void|
 |请求参数|callback（callback）
-###setPairListener
+### setPairListener
 |方法名|setPairListener|
 | :--------  | :-----  |
 |描述|* 单独设置对频的监听器|
 |返回值|void|
 |请求参数|listener（listener）
-###enterPairMode
+### enterPairMode
 |方法名|enterPairMode|
 | :--------  | :-----  |
 |描述|* 进入对频模式|
 |返回值|void|
 |请求参数|listener（callback）
-###exitPairMode
+### exitPairMode
 |方法名|exitPairMode|
 | :--------  | :-----  |
 |描述|* 退出对频模式|
@@ -75,8 +74,8 @@
 |请求参数|callback（callback）
 ##INFO
 ##ENUM
-###PairStatusInfo
- * 飞行器与地面站对频状态枚举，用于描述当前对频处于什么模式中
+### PairStatusInfo
+* 飞行器与地面站对频状态枚举，用于描述当前对频处于什么模式中
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
