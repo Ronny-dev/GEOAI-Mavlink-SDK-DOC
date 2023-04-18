@@ -4,6 +4,7 @@
 |描述|* 设置云台状态监听|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ### setGimbalSpeedControl
 |方法名|setGimbalSpeedControl|
 | :--------  | :-----  |
@@ -12,6 +13,7 @@
 |请求参数|yawRate（yaw）
 |请求参数|callback（callback）
 |请求参数|pitchRate（pitch）
+|云冠|不支持|
 ### setGimbalAngleControl
 |方法名|setGimbalAngleControl|
 | :--------  | :-----  |
@@ -21,6 +23,7 @@
 |请求参数|yawAngle（yaw）
 |请求参数|isAbsolute（大地坐标系/机身坐标系）
 |请求参数|callback（callback）
+|云冠|支持|
 ### setGimbalPitch
 |方法名|setGimbalPitch|
 | :--------  | :-----  |
@@ -28,21 +31,24 @@
 |返回值|void|
 |请求参数|pitchAngle（pitch）
 |请求参数|callback（callback）
+|云冠|支持|
 ### resetGimbal
 |方法名|resetGimbal|
 | :--------  | :-----  |
 |描述|* 重置云台（归中）|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### resetGimbalAndDown
 |方法名|resetGimbalAndDown|
 | :--------  | :-----  |
 |描述|* 重置云台并垂直朝下（朝下）|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ##INFO
 ### GimbalStateInfo
-* 云台状态回调
+ * 云台状态回调
 
 |名称|描述|
 | :--------  | :----:  |

@@ -3,6 +3,7 @@
 | :--------  | :-----  |
 |描述|* 获取地面电台状态信息|
 |返回值|MeshHelper2.MeshStatus（{link）|
+|云冠|不支持|
 ### void sendATCommand
 |方法名|void sendATCommand|
 | :--------  | :-----  |
@@ -10,12 +11,14 @@
 |返回值|void|
 |请求参数|at（AT指令）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setAirLinkStateListener
 |方法名|setAirLinkStateListener|
 | :--------  | :-----  |
 |描述||
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 |设置地面电台模块监听的回调{link|com.geoai.mavlink.util.MeshHelper2.MeshStatus}|
 ### isAirLinkConnected
 |方法名|isAirLinkConnected|
@@ -23,24 +26,28 @@
 |描述|* 获取当前地面电台是否正常连接|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### getHardwareAirLinkVersion
 |方法名|getHardwareAirLinkVersion|
 | :--------  | :-----  |
 |描述|* 获取地面电台硬件版本号|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### getAirLinkSerialNumber
 |方法名|getAirLinkSerialNumber|
 | :--------  | :-----  |
 |描述|* 获取地面电台序列号|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### airLinkRestart
 |方法名|airLinkRestart|
 | :--------  | :-----  |
 |描述|* 地面电台重启|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setSecurityCode
 |方法名|setSecurityCode|
 | :--------  | :-----  |
@@ -48,34 +55,39 @@
 |返回值|void|
 |请求参数|code（security code）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### getSecurityCode
 |方法名|getSecurityCode|
 | :--------  | :-----  |
 |描述|* 获取当前无线电密钥|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setPairListener
 |方法名|setPairListener|
 | :--------  | :-----  |
 |描述|* 单独设置对频的监听器|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### enterPairMode
 |方法名|enterPairMode|
 | :--------  | :-----  |
 |描述|* 进入对频模式|
 |返回值|void|
 |请求参数|listener（callback）
+|云冠|不支持|
 ### exitPairMode
 |方法名|exitPairMode|
 | :--------  | :-----  |
 |描述|* 退出对频模式|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ##INFO
 ##ENUM
 ### PairStatusInfo
-* 飞行器与地面站对频状态枚举，用于描述当前对频处于什么模式中
+ * 飞行器与地面站对频状态枚举，用于描述当前对频处于什么模式中
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |

@@ -4,6 +4,7 @@
 |描述|* 从无人机下载实时参数列表（非参数数据）|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 |throws|IOException|
 ### readAllParameter
 |方法名|readAllParameter|
@@ -11,6 +12,7 @@
 |描述|* 读取飞控参数列表全部数据, 其中包含飞控算法核心参数|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### readSingleParameter
 |方法名|readSingleParameter|
 | :--------  | :-----  |
@@ -18,6 +20,7 @@
 |返回值|void|
 |请求参数|listener（listener）
 |请求参数|index（需要读取的index）
+|云冠|不支持|
 ### writeSingleParameter
 |方法名|writeSingleParameter|
 | :--------  | :-----  |
@@ -25,18 +28,21 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|info（修改参数的属性）
+|云冠|不支持|
 ### setTransmitRateListener
 |方法名|setTransmitRateListener|
 | :--------  | :-----  |
 |描述|* 获取当前GCS系统数传实时传输速率|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### fetchFlightLogList
 |方法名|fetchFlightLogList|
 | :--------  | :-----  |
 |描述|* 获取飞行器日志列表|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### fetchFlightLog
 |方法名|fetchFlightLog|
 | :--------  | :-----  |
@@ -45,12 +51,14 @@
 |请求参数|listener（listener）
 |请求参数|saveFilePath（日志文件下载保存的路径）
 |请求参数|info（请先通过{{link #fetchFlightLogList(IFetchFlightLogListListener)}获取文件列表}）
+|云冠|不支持|
 ### cancelFetchFlightLog
 |方法名|cancelFetchFlightLog|
 | :--------  | :-----  |
 |描述|* 取消飞行器日志文件下载的动作|
 |返回值|void|
 |成功调用后会通过{link|IFlightLogDownloadListener}返回取消指令码|
+|云冠|不支持|
 ### ftpFileList
 |方法名|ftpFileList|
 | :--------  | :-----  |
@@ -58,6 +66,7 @@
 |返回值|void|
 |请求参数|filePath（飞控内部路径）
 |请求参数|listener（listener）
+|云冠|不支持|
 ### ftpDelFile
 |方法名|ftpDelFile|
 | :--------  | :-----  |
@@ -65,6 +74,7 @@
 |返回值|void|
 |请求参数|filePath（需删除的文件路径）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### ftpDelDirectory
 |方法名|ftpDelDirectory|
 | :--------  | :-----  |
@@ -73,6 +83,7 @@
 |请求参数|filePath（需删除的文件夹路径）
 |请求参数|callback（callback）
 |apiNote|非递归删除，请确保文件夹内部无占用文件|
+|云冠|不支持|
 ### ftpCreateDirectory
 |方法名|ftpCreateDirectory|
 | :--------  | :-----  |
@@ -80,6 +91,7 @@
 |返回值|void|
 |请求参数|filePath（需要创建的文件夹路径）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### ftpCalcFileCrc32
 |方法名|ftpCalcFileCrc32|
 | :--------  | :-----  |
@@ -87,6 +99,7 @@
 |返回值|void|
 |请求参数|filePath（文件路径）
 |请求参数|listener（listener）
+|云冠|不支持|
 ### ftpDownloadFile
 |方法名|ftpDownloadFile|
 | :--------  | :-----  |
@@ -94,6 +107,7 @@
 |返回值|void|
 |请求参数|filePath（文件路径）
 |请求参数|listener（listener）
+|云冠|不支持|
 ### ftpUploadFile
 |方法名|ftpUploadFile|
 | :--------  | :-----  |
@@ -102,15 +116,17 @@
 |请求参数|listener（listener）
 |请求参数|uploadFilePath（上传文件的完整路径）
 |请求参数|saveFilePath（保存文件路径）
+|云冠|不支持|
 ### ftpTerminateControl
 |方法名|ftpTerminateControl|
 | :--------  | :-----  |
 |描述|* 文件传输 - 终止[上传\下载]相关操作|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ##INFO
 ### FlightLogEntryInfo
-* 飞控日志
+ * 飞控日志
 
 |名称|描述|
 | :--------  | :----:  |
@@ -126,7 +142,7 @@
 |名称|描述|
 | :--------  | :----:  |
 ### LinkNodeTransmitRateInfo
-* 无线电链路上下行速率统计
+ * 无线电链路上下行速率统计
 
 |名称|描述|
 | :--------  | :----:  |

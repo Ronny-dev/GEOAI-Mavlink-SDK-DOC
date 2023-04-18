@@ -5,6 +5,7 @@
 |返回值|void|
 |请求参数|batteryStateListener（电池回调）
 |see|BatteryStateInfo|
+|云冠|支持|
 ### getBatteryExtraInfo
 |方法名|getBatteryExtraInfo|
 | :--------  | :-----  |
@@ -12,23 +13,27 @@
 |返回值|ExtBatteryStateInfo（电池信息）|
 |see|ExtBatteryStateInfo|
 |apiNote|如果接入多组电池，仅返回第一组|
+|云冠|不支持|
 ### getBatteryExtraInfo
 |方法名|getBatteryExtraInfo|
 | :--------  | :-----  |
 |描述|* 获取电池额外提供的信息     * 如果飞行器接入多组电池，应该用此接口|
 |返回值|ExtBatteryStateInfo（电池信息）|
 |请求参数|index（电池组Index）
+|云冠|不支持|
 ### getBatteryDamagedInfo
 |方法名|getBatteryDamagedInfo|
 | :--------  | :-----  |
 |描述|* 获取电池故障信息|
 |返回值|List<BatteryDamagedState>（返回电池故障信息列表）|
+|云冠|不支持|
 ### getBatteryCriticalThreshold
 |方法名|getBatteryCriticalThreshold|
 | :--------  | :-----  |
 |描述|* 设置电池电量严重不足时的阈值。这必须低于低阈值。该阈值通常会触发RTL。|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setBatteryCriticalThreshold
 |方法名|setBatteryCriticalThreshold|
 | :--------  | :-----  |
@@ -36,12 +41,14 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|threshold（电量百分比（0.00 - 0.30））
+|云冠|不支持|
 ### getBatteryEmergencyThreshold
 |方法名|getBatteryEmergencyThreshold|
 | :--------  | :-----  |
 |描述|* 设置电池危险电量低时的阈值。这必须低于临界阈值。这个阈值通常会触发着陆。|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setBatteryEmergencyThreshold
 |方法名|setBatteryEmergencyThreshold|
 | :--------  | :-----  |
@@ -49,12 +56,14 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|threshold（电量百分比（0.00 - 0.30））
+|云冠|不支持|
 ### getBatteryLowThreshold
 |方法名|getBatteryLowThreshold|
 | :--------  | :-----  |
 |描述|* 设置电池电量低时的阈值。这必须高于临界阈值。|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setBatteryLowThreshold
 |方法名|setBatteryLowThreshold|
 | :--------  | :-----  |
@@ -62,9 +71,10 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|threshold（电量百分比（0.00 - 0.50））
+|云冠|不支持|
 ##INFO
 ### BatteryStateInfo
-* 用于描述电池当前状态
+ * 用于描述电池当前状态
 
 |名称|描述|
 | :--------  | :----:  |
@@ -79,7 +89,7 @@
 |batteryRemainingPercentage|电池剩余容量%|
 |batteryRemainingTimes|电池剩余可用时间s|
 ### ExtBatteryStateInfo
-* 用于描述电池硬件属性
+ * 用于描述电池硬件属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -94,7 +104,7 @@
 |dischargeMaximumCurrent|电池最大放电电流|
 ##ENUM
 ### BatteryChargeState
-* 无人机电池冲放电程度的状态枚举
+ * 无人机电池冲放电程度的状态枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -107,7 +117,7 @@
 |BATTERY_CHARGE_STATE_UNHEALTHY|6|电池被诊断为有缺陷或发生错误，不鼓励/禁止使用|
 |BATTERY_CHARGE_STATE_CHARGING|7|电池正在充电|
 ### BatteryDamagedState
-* 无人机电池故障信息枚举
+ * 无人机电池故障信息枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |

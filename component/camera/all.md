@@ -4,6 +4,7 @@
 |描述|* 获取相机视频源|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ### setCameraVideoStreamSource
 |方法名|setCameraVideoStreamSource|
 | :--------  | :-----  |
@@ -11,12 +12,14 @@
 |返回值|void|
 |请求参数|listener（listener）
 |请求参数|source（视频源）
+|云冠|支持|
 ### getCameraVideoStreamResolution
 |方法名|getCameraVideoStreamResolution|
 | :--------  | :-----  |
 |描述|* 获取相机视频流分辨率|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ### setCameraVideoStreamResolution
 |方法名|setCameraVideoStreamResolution|
 | :--------  | :-----  |
@@ -24,12 +27,14 @@
 |返回值|void|
 |请求参数|listener（listener）
 |请求参数|resolution（分辨率）
+|云冠|支持|
 ### getCameraVideoStreamBitrate
 |方法名|getCameraVideoStreamBitrate|
 | :--------  | :-----  |
 |描述|* 获取相机视频流比特率|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ### setCameraVideoStreamBitrate
 |方法名|setCameraVideoStreamBitrate|
 | :--------  | :-----  |
@@ -37,42 +42,49 @@
 |返回值|void|
 |请求参数|listener（listener）
 |请求参数|bitrate（比特率）
+|云冠|支持|
 ### getCameraName
 |方法名|getCameraName|
 | :--------  | :-----  |
 |描述|* 获取相机名称|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ### setCameraHardwareStateListener
 |方法名|setCameraHardwareStateListener|
 | :--------  | :-----  |
 |描述|* 设置相机硬件状态|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### setCameraSystemStateListener
 |方法名|setCameraSystemStateListener|
 | :--------  | :-----  |
 |描述|* 设置相机系统状态|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### setCameraNewGeneratedInfoCallback
 |方法名|setCameraNewGeneratedInfoCallback|
 | :--------  | :-----  |
 |描述|* 设置相机生成新媒体文件的回调|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### setRecognizeStateListener
 |方法名|setRecognizeStateListener|
 | :--------  | :-----  |
 |描述|* 设置机载电脑图像识别结果回调|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|不支持|
 ### startSingleCapture
 |方法名|startSingleCapture|
 | :--------  | :-----  |
 |描述|* 触发相机拍照(单张)|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### startComboCapture
 |方法名|startComboCapture|
 | :--------  | :-----  |
@@ -80,6 +92,7 @@
 |返回值|void|
 |请求参数|count（连拍数量）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### startIntervalCapture
 |方法名|startIntervalCapture|
 | :--------  | :-----  |
@@ -87,24 +100,28 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|interval（频率 unit s）
+|云冠|支持|
 ### stopIntervalCapture
 |方法名|stopIntervalCapture|
 | :--------  | :-----  |
 |描述|* 触发相机停止定时拍照|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### startRecord
 |方法名|startRecord|
 | :--------  | :-----  |
 |描述|* 触发相机启动录像|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### stopRecord
 |方法名|stopRecord|
 | :--------  | :-----  |
 |描述|* 触发相机停止录像|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### setCameraMode
 |方法名|setCameraMode|
 | :--------  | :-----  |
@@ -112,12 +129,14 @@
 |返回值|void|
 |请求参数|mode（{link CameraMode} image/video）
 |请求参数|callback（callback）
+|云冠|支持|
 ### getCameraMode
 |方法名|getCameraMode|
 | :--------  | :-----  |
 |描述|* 获取相机当前模式|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### setZoomRatio
 |方法名|setZoomRatio|
 | :--------  | :-----  |
@@ -125,12 +144,14 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|ratio（ratio）
+|云冠|支持|
 ### getZoomRatio
 |方法名|getZoomRatio|
 | :--------  | :-----  |
 |描述|* 获取相机电子变焦倍率|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ### setFocusRing
 |方法名|setFocusRing|
 | :--------  | :-----  |
@@ -139,12 +160,14 @@
 |请求参数|ring（对焦环属性(0-50)）
 |请求参数|isAuto（是否启动自动对焦）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### getFocusRing
 |方法名|getFocusRing|
 | :--------  | :-----  |
 |描述|* 获取相机对焦环属性|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setISO
 |方法名|setISO|
 | :--------  | :-----  |
@@ -152,6 +175,7 @@
 |返回值|void|
 |请求参数|iso（{link CameraISO} 100-6400）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setAperture
 |方法名|setAperture|
 | :--------  | :-----  |
@@ -159,6 +183,7 @@
 |返回值|void|
 |请求参数|aperture（光圈{link CameraAperture}）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### setShutterSpeed
 |方法名|setShutterSpeed|
 | :--------  | :-----  |
@@ -166,6 +191,7 @@
 |返回值|void|
 |请求参数|callback（callback）
 |请求参数|shutterSpeed（快门{link CameraShutterSpeed}）
+|云冠|不支持|
 ### setExposure
 |方法名|setExposure|
 | :--------  | :-----  |
@@ -173,15 +199,17 @@
 |返回值|void|
 |请求参数|exposure（曝光{link CameraExposure}）
 |请求参数|callback（callback）
+|云冠|不支持|
 ### resetCameraConfigure
 |方法名|resetCameraConfigure|
 | :--------  | :-----  |
 |描述|* 重置相机所有参数|
 |返回值|void|
 |请求参数|callback（callback）
+|云冠|支持|
 ##INFO
 ### CameraHardwareInfo
-* 相机硬件属性
+ * 相机硬件属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -195,7 +223,7 @@
 |CameraExposure.CAMERA_EXPOSURE_COMPENSATION_N_0_0|曝光|
 |cameraFocusRing|对焦环参数|
 ### CameraNewGeneratedInfo
-* 相机新媒体文件生成类型
+ * 相机新媒体文件生成类型
 
 |名称|描述|
 | :--------  | :----:  |
@@ -205,7 +233,7 @@
 |altitude|高度|
 |path|存储路径|
 ### CameraSystemInfo
-* 相机系统属性
+ * 相机系统属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -215,7 +243,7 @@
 |recordingTimeMs|相机录制时长|
 |availableCapacity|相机剩余存储可拍摄数量|
 ### RecognizeStateInfo
-* 机载电脑识别对象返回类型
+ * 机载电脑识别对象返回类型
 
 |名称|描述|
 | :--------  | :----:  |
@@ -229,7 +257,7 @@
 |name|Identified target name|
 ##ENUM
 ### CameraAperture
-* 相机光圈
+ * 相机光圈
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -267,7 +295,7 @@
 |CAMERA_APERTURE_F_22|2200|The Aperture value is f/22.|
 |CAMERA_APERTURE_F_UNKNOWN|255|The Aperture value is Unknown.|
 ### CameraExposure
-* 相机曝光
+ * 相机曝光
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -304,7 +332,7 @@
 |CAMERA_EXPOSURE_COMPENSATION_P_5_0|31|The camera's exposure compensation is +5.0ev.|
 |CAMERA_EXPOSURE_COMPENSATION_FIXED|255|The camera's exposure compensation is fixed by the camera.|
 ### CameraImageStatus
-* 相机拍照模式
+ * 相机拍照模式
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -314,7 +342,7 @@
 |CAMERA_IMAGE_INTERVAL_CAPTURING|4|定时拍照中|
 |CAMERA_IMAGE_UNKNOWN|255|状态未知|
 ### CameraISO
-* 相机ISO
+ * 相机ISO
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -328,7 +356,7 @@
 |CAMERA_ISO_6400|9|ISO-6400|
 |CAMERA_ISO_FIXED|255|ISO-UNKNOWN|
 ### CameraMode
-* 相机模式
+ * 相机模式
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -336,7 +364,7 @@
 |CAMERA_MODE_VIDEO|1|录像模式|
 |CAMERA_MODE_UNKNOWN|255|模式未知|
 ### CameraResolutionRatio
-* 相机分辨率
+ * 相机分辨率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -344,7 +372,7 @@
 |CAPTURE_RESOLUTION_4000X3000|1|40003000|
 |CAPTURE_RESOLUTION_UNKNOWN|255|未知|
 ### CameraShutterSpeed
-* 相机快门速度
+ * 相机快门速度
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -417,7 +445,7 @@
 |CAMERA_MANAGER_SHUTTER_SPEED_30|66|SHUTTER_SPEED_30|
 |CAMERA_MANAGER_SHUTTER_SPEED_UNKNOWN|255|SHUTTER_SPEED_UNKNOWN|
 ### CameraVideoStatus
-* 相机录像状态
+ * 相机录像状态
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -425,7 +453,7 @@
 |CAMERA_VIDEO_CAPTURING|1|录像中|
 |CAMERA_VIDEO_UNKNOWN|255|未知状态|
 ### CameraVideoStreamBitrate
-* 相机视频流码率
+ * 相机视频流码率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -439,7 +467,7 @@
 |VIDEOSTREAM_BITRATE_7Mbps|7|7Mbps|
 |VIDEOSTREAM_BITRATE_8Mbps|8|8Mbps|
 ### CameraVideoStreamResolution
-* 视频流分辨率
+ * 视频流分辨率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -448,7 +476,7 @@
 |VIDEOSTREAM_RESOLUTION_720P|1|720P|
 |VIDEOSTREAM_RESOLUTION_VGA|2|480P|
 ### CameraVideoStreamSource
-* 相机视频流类型
+ * 相机视频流类型
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -457,7 +485,7 @@
 |LIVEVIEW_CAMERA_SOURCE_ZOOM|2|变焦|
 |LIVEVIEW_CAMERA_SOURCE_IR|3|红外|
 ### CameraZoomRatio
-* 相机变焦倍率
+ * 相机变焦倍率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |

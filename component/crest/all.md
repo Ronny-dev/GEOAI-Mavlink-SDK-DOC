@@ -4,9 +4,10 @@
 |描述|* 设置机载电脑LTE模块状态|
 |返回值|void|
 |请求参数|listener（listener）
+|云冠|支持|
 ##INFO
 ### Rm500HardwareStateInfo
-* 机载电脑4G/5G硬件状态回调
+ * 机载电脑4G/5G硬件状态回调
 
 |名称|描述|
 | :--------  | :----:  |
