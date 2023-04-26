@@ -15,6 +15,10 @@
 allprojects {
 		repositories {
 			...
+            maven {
+                allowInsecureProtocol = true
+                url 'http://maven.ronny.zone:8081/repository/geoai'
+            }
 			maven { url 'https://jitpack.io' }
 		}
 	}
@@ -22,7 +26,7 @@ allprojects {
 2. 添加dependency依赖
 ```groovy
 	dependencies {
-	        implementation 'com.github.Ronny-dev:GeoaiMavLink_Android:***'
+	        implementation 'com.geoai.mavlink:mavsdk***'
 	}
 ```
 3. 在Androidmanifest中添加相关权限申请
