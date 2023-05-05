@@ -2,6 +2,10 @@
 
 ## Builder
 
+---
+
+航线朝向
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setHeadingMode | 设置任务朝向模式 |
@@ -11,12 +15,20 @@
 |  | MISSION_FINISH_ACTION_AUTO_LAND = 6 | 原地降落 |
 |  | MISSION_FINISH_ACTION_GO_RALLY = 7 | 前往备降点 |
 
+---
+
+任务结束动作
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setFinishAction | 设置任务结束动作 |
 | 参数类型 | MissionHeadingMode | 枚举值 |
 | 参数 | MISSION_HEADING_MODE_AUTO = 1 | 自动朝向模式 |
 |  | MISSION_HEADING_MODE_WAYPOINT = 3 | 使用航点朝向 |
+
+---
+
+任务全局速度
 
 |  | 名称 | 描述 |
 | --- | --- | --- |
@@ -28,6 +40,10 @@
 
 </aside>
 
+---
+
+航点列表
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setWaypointList | 设置航点列表 |
@@ -37,17 +53,29 @@
 💡 通过此接口设置Waypoint细节，具体看Waypoint实例文档
 </aside>
 
+---
+
 ## Waypoint
+
+航点纬度
 
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setWayPointLatitude | 设置航点纬度 |
 | 参数类型 | latitude | 浮点值 |
 
+---
+
+航点经度
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setWayPointLongitude | 设置航点经度 |
 | 参数类型 | longitude | 浮点值 |
+
+---
+
+航点高度
 
 |  | 名称 | 描述 |
 | --- | --- | --- |
@@ -59,20 +87,36 @@
 
 </aside>
 
+---
+
+航点速度
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setWayPointSpeed | 设置航点速度 |
 | 参数类型 | speed (m/s) | 浮点值 |
+
+---
+
+航点定时拍照
 
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setShootPhotoTimeInterval | 设置航点定时拍照属性 |
 | 参数类型 | shootPhotoTimeInterval (s) | 浮点值 |
 
+---
+
+航点定距拍照
+
 |  | 名称 | 描述 |
 | --- | --- | --- |
 | 方法名 | setShootPhotoDistanceInterval | 设置航点定距拍照属性 |
 | 参数类型 | shootPhotoDistanceInterval (cm) | 浮点值 |
+
+---
+
+航点动作
 
 |  | 名称 | 描述 |
 | --- | --- | --- |
@@ -83,6 +127,8 @@
 💡 通过此接口配置航点动作，具体查阅ActionParam实例文档
 
 </aside>
+
+---
 
 
 ## ActionParam
