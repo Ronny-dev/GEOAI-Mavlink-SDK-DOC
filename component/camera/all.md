@@ -209,7 +209,7 @@
 |云冠|支持|
 ##INFO
 ### CameraHardwareInfo
- * 相机硬件属性
+* 相机硬件属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -223,7 +223,7 @@
 |CameraExposure.CAMERA_EXPOSURE_COMPENSATION_N_0_0|曝光|
 |cameraFocusRing|对焦环参数|
 ### CameraNewGeneratedInfo
- * 相机新媒体文件生成类型
+* 相机新媒体文件生成类型
 
 |名称|描述|
 | :--------  | :----:  |
@@ -233,7 +233,7 @@
 |altitude|高度|
 |path|存储路径|
 ### CameraSystemInfo
- * 相机系统属性
+* 相机系统属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -243,7 +243,7 @@
 |recordingTimeMs|相机录制时长|
 |availableCapacity|相机剩余存储可拍摄数量|
 ### RecognizeStateInfo
- * 机载电脑识别对象返回类型
+* 机载电脑识别对象返回类型
 
 |名称|描述|
 | :--------  | :----:  |
@@ -257,7 +257,7 @@
 |name|Identified target name|
 ##ENUM
 ### CameraAperture
- * 相机光圈
+* 相机光圈
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -295,7 +295,7 @@
 |CAMERA_APERTURE_F_22|2200|The Aperture value is f/22.|
 |CAMERA_APERTURE_F_UNKNOWN|255|The Aperture value is Unknown.|
 ### CameraExposure
- * 相机曝光
+* 相机曝光
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -332,7 +332,7 @@
 |CAMERA_EXPOSURE_COMPENSATION_P_5_0|31|The camera's exposure compensation is +5.0ev.|
 |CAMERA_EXPOSURE_COMPENSATION_FIXED|255|The camera's exposure compensation is fixed by the camera.|
 ### CameraImageStatus
- * 相机拍照模式
+* 相机拍照模式
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -342,7 +342,7 @@
 |CAMERA_IMAGE_INTERVAL_CAPTURING|4|定时拍照中|
 |CAMERA_IMAGE_UNKNOWN|255|状态未知|
 ### CameraISO
- * 相机ISO
+* 相机ISO
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -356,7 +356,7 @@
 |CAMERA_ISO_6400|9|ISO-6400|
 |CAMERA_ISO_FIXED|255|ISO-UNKNOWN|
 ### CameraMode
- * 相机模式
+* 相机模式
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -364,7 +364,7 @@
 |CAMERA_MODE_VIDEO|1|录像模式|
 |CAMERA_MODE_UNKNOWN|255|模式未知|
 ### CameraResolutionRatio
- * 相机分辨率
+* 相机分辨率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -372,7 +372,7 @@
 |CAPTURE_RESOLUTION_4000X3000|1|40003000|
 |CAPTURE_RESOLUTION_UNKNOWN|255|未知|
 ### CameraShutterSpeed
- * 相机快门速度
+* 相机快门速度
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -445,7 +445,7 @@
 |CAMERA_MANAGER_SHUTTER_SPEED_30|66|SHUTTER_SPEED_30|
 |CAMERA_MANAGER_SHUTTER_SPEED_UNKNOWN|255|SHUTTER_SPEED_UNKNOWN|
 ### CameraVideoStatus
- * 相机录像状态
+* 相机录像状态
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -453,7 +453,7 @@
 |CAMERA_VIDEO_CAPTURING|1|录像中|
 |CAMERA_VIDEO_UNKNOWN|255|未知状态|
 ### CameraVideoStreamBitrate
- * 相机视频流码率
+* 相机视频流码率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -467,7 +467,7 @@
 |VIDEOSTREAM_BITRATE_7Mbps|7|7Mbps|
 |VIDEOSTREAM_BITRATE_8Mbps|8|8Mbps|
 ### CameraVideoStreamResolution
- * 视频流分辨率
+* 视频流分辨率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -476,7 +476,7 @@
 |VIDEOSTREAM_RESOLUTION_720P|1|720P|
 |VIDEOSTREAM_RESOLUTION_VGA|2|480P|
 ### CameraVideoStreamSource
- * 相机视频流类型
+* 相机视频流类型
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -485,11 +485,13 @@
 |LIVEVIEW_CAMERA_SOURCE_ZOOM|2|变焦|
 |LIVEVIEW_CAMERA_SOURCE_IR|3|红外|
 ### CameraZoomRatio
- * 相机变焦倍率
+* 相机变焦倍率
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
-|CAMERA_ELECTRON_ZOOM_X1|0|X1|
-|CAMERA_ELECTRON_ZOOM_X2|1|X2|
-|CAMERA_ELECTRON_ZOOM_X3|2|X3|
+|CAMERA_ELECTRON_ZOOM_X1|1|X1|
+|CAMERA_ELECTRON_ZOOM_X2|2|X2|
+|CAMERA_ELECTRON_ZOOM_X3|3|X3|
+|CAMERA_ELECTRON_ZOOM_X4|4|X4|
+|CAMERA_ELECTRON_ZOOM_X5|5|X5|
 |CAMERA_ELECTRON_ZOOM_UNKNOWN|255|未知|

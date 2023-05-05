@@ -62,7 +62,7 @@
 |云冠|不支持|
 ##INFO
 ### NtripAuthInfo
- * ntrip服务器身份验证
+* ntrip服务器身份验证
 
 |名称|描述|
 | :--------  | :----:  |
@@ -72,7 +72,7 @@
 |password|密码|
 |mountPoint|挂载点|
 ### RtkEntryInfo
- * RTK状态信息返回
+* RTK状态信息返回
 
 |名称|描述|
 | :--------  | :----:  |

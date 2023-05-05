@@ -74,7 +74,7 @@
 |云冠|不支持|
 ##INFO
 ### BatteryStateInfo
- * 用于描述电池当前状态
+* 用于描述电池当前状态
 
 |名称|描述|
 | :--------  | :----:  |
@@ -89,7 +89,7 @@
 |batteryRemainingPercentage|电池剩余容量%|
 |batteryRemainingTimes|电池剩余可用时间s|
 ### ExtBatteryStateInfo
- * 用于描述电池硬件属性
+* 用于描述电池硬件属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -104,7 +104,7 @@
 |dischargeMaximumCurrent|电池最大放电电流|
 ##ENUM
 ### BatteryChargeState
- * 无人机电池冲放电程度的状态枚举
+* 无人机电池冲放电程度的状态枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -117,7 +117,7 @@
 |BATTERY_CHARGE_STATE_UNHEALTHY|6|电池被诊断为有缺陷或发生错误，不鼓励/禁止使用|
 |BATTERY_CHARGE_STATE_CHARGING|7|电池正在充电|
 ### BatteryDamagedState
- * 无人机电池故障信息枚举
+* 无人机电池故障信息枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
