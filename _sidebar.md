@@ -24,6 +24,8 @@
 
 - 组件模块
 	- [飞控模块](component/fc/all.md)
+	- [任务模块](component/mission/all.md)
+	  - [任务构建器](component/mission/MissionBuilder.md)
 	- [相机模块](component/camera/all.md)
 	- [云台模块](component/gimbal/all.md)
 	- [电池模块](component/battery/all.md)
