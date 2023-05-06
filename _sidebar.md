@@ -37,4 +37,5 @@
 - 常见问题
 - 其他
 	- [无线电模块出厂配置](other/WirelessConfigureGuide.md)
-	- [云冠3连接使用指南](other/云冠3连接使用指南.md)
+	- [云冠3硬件连接指南](other/云冠硬件连接指南.md)
+	- [云冠3软件接入指南](other/云冠软件接入指南.md)
