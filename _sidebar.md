@@ -10,6 +10,7 @@
 		- [AndroidStudio配置工程](guide/AndroidStudioGuide.md)
 		- [开发注意事项](guide/MattersNeedAttention.md)
 	- 开发教程
+		- [设备连接教程](guide/module/DevicesConnect.md)
 		- [RTK教程](guide/module/RTK.md)
 		- [参数配置教程](guide/module/ParamConfig.md)
 		- [日志获取教程](guide/module/LogcatConfig.md)
@@ -20,7 +21,6 @@
 		- [直播教程]()
 		- [航线教程](guide/module/MissionGuide.md)
 		- [多媒体]()
-		- [P2P]()
 
 - 组件模块
 	- [飞控模块](component/fc/all.md)
