@@ -16,6 +16,7 @@
 		- [日志获取教程](guide/module/LogcatConfig.md)
 		- [文件管理教程](guide/module/FileManager.md)
 		- [虚拟摇杆教程](guide/module/VirtualStick.md)
+		- [健康管理系统](guide/module/HMS.md)
 		- [固件升级教程]()
 		- [图传教程]()
 		- [直播教程]()
