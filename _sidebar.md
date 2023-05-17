@@ -21,7 +21,7 @@
 		- [图传教程]()
 		- [直播教程]()
 		- [航线教程](guide/module/MissionGuide.md)
-		- [多媒体]()
+		- [多媒体](guide/module/Media.md)
 
 - 组件模块
 	- [飞控模块](component/fc/all.md)
