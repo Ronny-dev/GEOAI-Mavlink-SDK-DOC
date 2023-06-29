@@ -6,21 +6,11 @@
 |请求参数|batteryStateListener（电池回调）
 |see|BatteryStateInfo|
 |云冠|支持|
-### getBatteryExtraInfo
-|方法名|getBatteryExtraInfo|
+### getBatteryCellsCount
+|方法名|getBatteryCellsCount|
 | :--------  | :-----  |
-|描述|* 获取电池额外提供的信息|
-|返回值|ExtBatteryStateInfo（电池信息）|
-|see|ExtBatteryStateInfo|
-|apiNote|如果接入多组电池，仅返回第一组|
-|云冠|不支持|
-### getBatteryExtraInfo
-|方法名|getBatteryExtraInfo|
-| :--------  | :-----  |
-|描述|* 获取电池额外提供的信息     * 如果飞行器接入多组电池，应该用此接口|
-|返回值|ExtBatteryStateInfo（电池信息）|
-|请求参数|index（电池组Index）
-|云冠|不支持|
+|描述|* 获取电芯总数|
+|返回值|int（count）|
 ### getBatteryDamagedInfo
 |方法名|getBatteryDamagedInfo|
 | :--------  | :-----  |
@@ -74,14 +64,17 @@
 |云冠|不支持|
 ##INFO
 ### BatteryStateInfo
-* 用于描述电池当前状态
+ * 用于描述电池当前状态
 
 |名称|描述|
 | :--------  | :----:  |
 |isBatteryDamaged|电池是否故障|
-|batteryChargeState|电池充电状态|
+|batteryChargeState|电池电量状态|
 |batteryTemperature|电池温度|
 |totalVoltage|电池总电压|
+|averagePower|电池功率|
+|cycleCount|电池循环次数|
+|batteryHealth|电池健康状态|
 |cellVoltage|电芯电压|
 |batteryDischarge|放电电流cA|
 |batteryChargeConsumed|电池剩余容量mAh|
@@ -89,7 +82,7 @@
 |batteryRemainingPercentage|电池剩余容量%|
 |batteryRemainingTimes|电池剩余可用时间s|
 ### ExtBatteryStateInfo
-* 用于描述电池硬件属性
+ * 用于描述电池硬件属性
 
 |名称|描述|
 | :--------  | :----:  |
@@ -104,20 +97,20 @@
 |dischargeMaximumCurrent|电池最大放电电流|
 ##ENUM
 ### BatteryChargeState
-* 无人机电池冲放电程度的状态枚举
+ * 无人机电池冲放电程度的状态枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
 |BATTERY_CHARGE_STATE_UNDEFINED|0|不支持|
-|BATTERY_CHARGE_STATE_OK|1|电池充电完成|
-|BATTERY_CHARGE_STATE_LOW|2|电池电量状态低，关闭电池警告和信息监控|
-|BATTERY_CHARGE_STATE_CRITICAL|3|电池状态严重故障，立即返回或中止。|
-|BATTERY_CHARGE_STATE_EMERGENCY|4|电池状态紧急故障，立即返回或中止。|
+|BATTERY_CHARGE_STATE_OK|1|电量正常|
+|BATTERY_CHARGE_STATE_LOW|2|电量低（告警）|
+|BATTERY_CHARGE_STATE_CRITICAL|3|电量低（返航）|
+|BATTERY_CHARGE_STATE_EMERGENCY|4|电量低（迫降）|
 |BATTERY_CHARGE_STATE_FAILED|5|电池故障，电池发生不可逆转损坏|
 |BATTERY_CHARGE_STATE_UNHEALTHY|6|电池被诊断为有缺陷或发生错误，不鼓励/禁止使用|
 |BATTERY_CHARGE_STATE_CHARGING|7|电池正在充电|
 ### BatteryDamagedState
-* 无人机电池故障信息枚举
+ * 无人机电池故障信息枚举
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |

@@ -155,9 +155,95 @@
 |请求参数|callback（callback）
 |请求参数|points（备降点列表）
 |云冠|不支持|
+### setFcAltitudeLimit
+|方法名|setFcAltitudeLimit|
+| :--------  | :-----  |
+|描述|* 设置飞行器最大飞行高度|
+|返回值|void|
+|请求参数|altitude（AGL高度）
+|请求参数|callback（callback）
+|云冠|不支持|
+### getFcAltitudeLimit
+|方法名|getFcAltitudeLimit|
+| :--------  | :-----  |
+|描述|* 获取飞行器最大飞行高度|
+|返回值|void|
+|请求参数|callback（callback）
+|云冠|不支持|
+### setFcDistanceLimit
+|方法名|setFcDistanceLimit|
+| :--------  | :-----  |
+|描述|* 设置飞行器最远飞行距离|
+|返回值|void|
+|请求参数|distance（水平飞行距离）
+|请求参数|callback（callback）
+|云冠|不支持|
+### getFcDistanceLimit
+|方法名|getFcDistanceLimit|
+| :--------  | :-----  |
+|描述|* 获取飞行器最远飞行距离|
+|返回值|void|
+|请求参数|callback（callback）
+### setSimulateMode
+|方法名|setSimulateMode|
+| :--------  | :-----  |
+|描述|* 设置模拟器模式|
+|返回值|void|
+|请求参数|callback（callback）
+|请求参数|isEnable（是否开启模拟器）
+|云冠|不支持|
+### getSimulateModeEnable
+|方法名|getSimulateModeEnable|
+| :--------  | :-----  |
+|描述|* 获取当前是否处于模拟器模式|
+|返回值|void|
+|请求参数|callback（callback）
+|云冠|不支持|
+### setHorizonSpeedLimit
+|方法名|setHorizonSpeedLimit|
+| :--------  | :-----  |
+|描述|* 设置最大水平飞行速度|
+|返回值|void|
+|请求参数|callback（callback）
+|请求参数|speedLimit（飞行速度m/s）
+|云冠|不支持|
+### getHorizonSpeedLimit
+|方法名|getHorizonSpeedLimit|
+| :--------  | :-----  |
+|描述|* 获取最大水平飞行速度|
+|返回值|void|
+|请求参数|callback（callback）
+|云冠|不支持|
+### setConnectionFailSafeBehavior
+|方法名|setConnectionFailSafeBehavior|
+| :--------  | :-----  |
+|描述|* 设置飞控失联动作|
+|返回值|void|
+|请求参数|mode（mode）
+|请求参数|callback（callback）
+### getConnectionFailSafeBehavior
+|方法名|getConnectionFailSafeBehavior|
+| :--------  | :-----  |
+|描述|* 获取飞控失联动作|
+|返回值|void|
+|请求参数|callback（callback）
+### setHomeLocationUsingAircraftCurrentLocation
+|方法名|setHomeLocationUsingAircraftCurrentLocation|
+| :--------  | :-----  |
+|描述|* 用当前无人机位置设置为返航点|
+|返回值|void|
+|请求参数|callback（callback）
+### setHomeLocation
+|方法名|setHomeLocation|
+| :--------  | :-----  |
+|描述|* 设置返航点位置|
+|返回值|void|
+|请求参数|latitude（纬度）
+|请求参数|callback（callback）
+|请求参数|longitude（经度）
 ##INFO
 ### AircraftDiagnosticsStateInfo
-* hms健康管理系统状态回调
+ * hms健康管理系统状态回调
 
 |名称|描述|
 | :--------  | :----:  |
@@ -165,8 +251,10 @@
 |alertIndex|告警序列|
 |alertLevel|告警等级|
 |timestamp|告警时间|
+|holdTime|持续时间|
+|args|内部参数|
 ### FlyControllerStateInfo
-* 飞控系统状态回调
+ * 飞控系统状态回调
 
 |名称|描述|
 | :--------  | :----:  |
@@ -182,6 +270,7 @@
 |aircraftGpsSatelliteNumber|飞行器GPS卫星数|
 |aircraftHomeLatitude|飞行器返航点纬度|
 |aircraftHomeLongitude|飞行器返航点经度|
+|aircraftHomeAltitude|飞行器返航点高度（MSL）|
 |flyMode|当前飞控模式|
 |isMotorsOn|当前电机是否启动|
 |isFlying|当前飞机是否在空中|
@@ -193,8 +282,16 @@
 |aircraftReturnMode|飞行器返航路径类型|
 |aircraftReturnState|飞行器返航动作|
 ##ENUM
+### null
+null
+|名称|值|描述|
+| :--------  | :-----  | :----:  |
+|HOVER|1|悬停|
+|LANDING|3|原地降落|
+|GO_HOME|2|返航（默认）|
+|UNKNOWN|0|未知|
 ### AircraftReturnMode
-* 飞机返航模式枚举类型，用于描述飞机的返航模式。
+ * 飞机返航模式枚举类型，用于描述飞机的返航模式。
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -212,7 +309,7 @@
 |RTL_TYPE_BY_PASS_LAND|11|沿路径返回降落点。（如果不存在降落点，则返回home点）|
 |RTL_TYPE_HOME_OR_RALLY|12|直线返回（最近的）home点、备降点。|
 ### AircraftReturnState
-* 飞机返航状态枚举类型，用于描述飞机当前的返航状态。
+ * 飞机返航状态枚举类型，用于描述飞机当前的返航状态。
 
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
@@ -227,3 +324,7 @@
 |RTL_STATE_LANDED|8|降落完成|
 |RTL_STATE_HEAD_TO_CENTER|9|调整返航朝向|
 |RTL_STATE_BY_PASS|10|沿路径飞往目标返航点|
+### null
+null
+|名称|值|描述|
+| :--------  | :-----  | :----:  |

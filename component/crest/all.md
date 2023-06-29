@@ -122,9 +122,15 @@
 |描述|* 获取RTMP推流地址|
 |返回值|void|
 |请求参数|callback（callback）
+### getP2pIpAddress
+|方法名|getP2pIpAddress|
+| :--------  | :-----  |
+|描述|* 获取p2p链路私网address|
+|返回值|void|
+|请求参数|callback（callback）
 ##INFO
 ### Rm500HardwareStateInfo
-* 机载电脑4G/5G硬件状态回调
+ * 机载电脑4G/5G硬件状态回调
 
 |名称|描述|
 | :--------  | :----:  |

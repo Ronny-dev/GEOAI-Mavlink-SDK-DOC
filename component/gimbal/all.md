@@ -46,12 +46,43 @@
 |返回值|void|
 |请求参数|callback（callback）
 |云冠|支持|
+### setGimbalPitchRate
+|方法名|setGimbalPitchRate|
+| :--------  | :-----  |
+|描述|* 设置云台俯仰角控制速度|
+|返回值|void|
+|请求参数|rate（速率 °/s）
+|请求参数|callback（callback）
+|云冠|不支持|
+### getGimbalPitchRate
+|方法名|getGimbalPitchRate|
+| :--------  | :-----  |
+|描述|* 获取云台俯仰角控制速度|
+|返回值|void|
+|请求参数|callback（callback）
+|云冠|不支持|
+### setGimbalYawRate
+|方法名|setGimbalYawRate|
+| :--------  | :-----  |
+|描述|* 设置云台横滚角控制速度|
+|返回值|void|
+|请求参数|rate（速率 °/s）
+|请求参数|callback（callback）
+|云冠|不支持|
+### getGimbalYawRate
+|方法名|getGimbalYawRate|
+| :--------  | :-----  |
+|描述|* 获取云台横滚角控制速度|
+|返回值|void|
+|请求参数|callback（callback）
+|云冠|不支持|
 ##INFO
 ### GimbalStateInfo
-* 云台状态回调
+ * 云台状态回调
 
 |名称|描述|
 | :--------  | :----:  |
+|primaryControlSystemID|当前控制权所在的系统ID|
 |isConnected|云台是否连接|
 |deviceID|云台设备ID|
 |pitchRadian|pitch弧度|
