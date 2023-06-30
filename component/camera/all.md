@@ -207,6 +207,7 @@
 |返回值|void|
 |请求参数|callback（callback）
 |云冠|支持|
+
 ##INFO
 ### CameraHardwareInfo
  * 相机硬件属性
@@ -255,6 +256,7 @@
 |frame_id|frame id|
 |total_num|object total num|
 |name|Identified target name|
+
 ##ENUM
 ### CameraAperture
  * 相机光圈

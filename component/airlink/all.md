@@ -60,8 +60,10 @@
 | :--------  | :-----  |
 |描述|* 启动对频|
 |返回值|void|
+
 ##INFO
-### null
+### AntennaSignalInfo
+ * 无线电模块天线物理层数据反馈
 
 |名称|描述|
 | :--------  | :----:  |
@@ -74,13 +76,15 @@
 |-1|接收信号功率|
 |-1|接收信号强度|
 |-1|信噪比|
-### null
+### WirelessBandwidthInfo
+ * 无线电带宽信息
 
 |名称|描述|
 | :--------  | :----:  |
 |uplinkSignalBandwidth|上行带宽设定|
 |downloadSignalBandwidth|下行带宽设定|
-### null
+### WirelessChannelInterfaceInfo
+ * 无线电频点信息
 
 |名称|描述|
 | :--------  | :----:  |
@@ -88,7 +92,8 @@
 |freqPrefer|当前选用频点|
 |freqList|频点列表|
 |interferenceList|干扰值列表|
-### null
+### WirelessDataTransmissionInfo
+ * 无线电信号传输状态
 
 |名称|描述|
 | :--------  | :----:  |
@@ -99,13 +104,15 @@
 |downLinkDataSpeed|当前下行数据带宽|
 |upLinkDataCapacity|上行数据带宽理论值|
 |upLinkDataSpeed|当前上行数据带宽|
-### null
+### WirelessFrequencyInfo
+ * 无线电频点设定
 
 |名称|描述|
 | :--------  | :----:  |
 |isAutoHopping|是否自动跳频|
 |frequencyPoint|手动频点-当hopping=true时无效|
-### null
+### WirelessHardwareInfo
+ * 无线电硬件信息
 
 |名称|描述|
 | :--------  | :----:  |
@@ -115,23 +122,28 @@
 |version|设备版本|
 |mac|设备MAC地址|
 |uptime|设备上电时间|
-### null
+### WirelessSignalInfo
+ * 无线电信号等级
 
 |名称|描述|
 | :--------  | :----:  |
+
 ##ENUM
-### null
-null
+### BandWidthState
+ * 无线电带宽模式
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
 |BW_1Dot4MHz|0|1.4Mhz|
 |BW_10MHz|3|10Mhz|
 |BW_20MHz|5|20Mhz|
 |BW_UNKNOWN|-1|unknown|
-### null
-null
+### WirelessLevelState
+ * 无线电信号等级
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
 |GREAT|1|极佳|
 |GOOD|2|一般|
 |BAD|3|较差|
+|UNKNOWN|-1|未知|

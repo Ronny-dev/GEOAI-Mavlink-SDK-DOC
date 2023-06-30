@@ -241,6 +241,7 @@
 |请求参数|latitude（纬度）
 |请求参数|callback（callback）
 |请求参数|longitude（经度）
+
 ##INFO
 ### AircraftDiagnosticsStateInfo
  * hms健康管理系统状态回调
@@ -281,9 +282,11 @@
 |aircraftReturnDestinationType|飞行器返航点类型|
 |aircraftReturnMode|飞行器返航路径类型|
 |aircraftReturnState|飞行器返航动作|
+
 ##ENUM
-### null
-null
+### AircraftFailSafeBehaviorMode
+ * 飞行器返航失控策略
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
 |HOVER|1|悬停|
@@ -324,7 +327,16 @@ null
 |RTL_STATE_LANDED|8|降落完成|
 |RTL_STATE_HEAD_TO_CENTER|9|调整返航朝向|
 |RTL_STATE_BY_PASS|10|沿路径飞往目标返航点|
-### null
-null
+### HmsSeverityLevel
+ * HMS告警等级
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
+|MAV_SEVERITY_EMERGENCY|0|紧急突发事件|
+|MAV_SEVERITY_ALERT|1|提醒事件|
+|MAV_SEVERITY_CRITICAL|2|危机事件|
+|MAV_SEVERITY_ERROR|3|错误事件|
+|MAV_SEVERITY_WARNING|4|告警事件|
+|MAV_SEVERITY_NOTICE|5|通知事件|
+|MAV_SEVERITY_INFO|6|常规事件|
+|MAV_SEVERITY_DEBUG|7|调试输出|

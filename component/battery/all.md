@@ -62,6 +62,7 @@
 |请求参数|callback（callback）
 |请求参数|threshold（电量百分比（0.00 - 0.50））
 |云冠|不支持|
+
 ##INFO
 ### BatteryStateInfo
  * 用于描述电池当前状态
@@ -95,6 +96,7 @@
 |chargingMinimumVoltage|电池最小充电电压|
 |chargingMaximumVoltage|电池最大充电电压|
 |dischargeMaximumCurrent|电池最大放电电流|
+
 ##ENUM
 ### BatteryChargeState
  * 无人机电池冲放电程度的状态枚举

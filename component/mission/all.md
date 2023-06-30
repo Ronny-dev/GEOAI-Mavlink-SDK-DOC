@@ -63,6 +63,7 @@
 |请求参数|radius（半径）
 |请求参数|speed（速度）
 |请求参数|longitude（经度）
+
 ##INFO
 ### MissionStateInfo
  * 用于描述任务整体状态
@@ -74,11 +75,20 @@
 |totalWaypoint|航点总数|
 |currentReachWaypointIndex|当前到达航点序列|
 |currentActionIndex|当前执行的航点动作序列|
+
 ##ENUM
 ### null
 null
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
+|public class MissionDescription {|-1|任务描述|
+|private int totalAction;|-1|总共的动作数|
+|private int headingMode;|-1|偏航朝向模式|
+|private int forceWaypointMode;|-1|@deprecated 暂不使用|
+|private int waypointPathMode;|-1|航点飞行路径模式|
+|private int finishAction = 1;|-1|任务结束动作|
+|private float missionAutoSpeed;|-1|任务速度，若航点未标记速度则用此速度|
+|private List<WaypointDescription> waypointList;|-1|航点描述|
 ### MissionState
  * 用于描述航线执行状态
 
@@ -104,8 +114,9 @@ null
 |READY_TO_EXECUTE,|-1|等待执行|
 |FAILED,|-1|上传失败|
 |UNKNOWN|-1|未知|
-### null
-null
+### OrbitYawBehaviour
+ * 环绕任务模式
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
 |ORBIT_YAW_BEHAVIOUR_HOLD_FRONT_TO_CIRCLE_CENTER|0|指向兴趣点|
@@ -118,3 +129,9 @@ null
 null
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
+|public class WaypointDescription {|-1|航点描述|
+|private double latitude;|-1|航点纬度|
+|private double longitude;|-1|航点经度|
+|private double altitude;|-1|航点高度（MSL）|
+|private float speed;|-1|航点速度|
+|private int seq;|-1|航点序列|

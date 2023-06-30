@@ -157,6 +157,7 @@
 |描述|* 设置固件升级的监听|
 |返回值|void|
 |请求参数|listener（listener）
+
 ##INFO
 ### null
 
@@ -231,12 +232,20 @@
 
 |名称|描述|
 | :--------  | :----:  |
-### null
+### VersionInfo
+ * 版本信息
 
 |名称|描述|
 | :--------  | :----:  |
+|mComponentType|子模块类型|
+|mSwVersionCode|软件版本|
+|mHwVersionCode|硬件版本|
+
 ##ENUM
-### null
-null
+### LoggerSystemType
+ * 日志系统模式
+
 |名称|值|描述|
 | :--------  | :-----  | :----:  |
+|FC,|-1|飞控|
+|CREST;|-1|云冠|

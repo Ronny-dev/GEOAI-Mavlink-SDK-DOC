@@ -76,6 +76,7 @@
 |返回值|void|
 |请求参数|callback（callback）
 |云冠|不支持|
+
 ##INFO
 ### GimbalStateInfo
  * 云台状态回调
@@ -94,4 +95,5 @@
 |angularVelocityX|x轴角速度|
 |angularVelocityY|y轴角速度|
 |angularVelocityZ|z轴角速度|
+
 ##ENUM

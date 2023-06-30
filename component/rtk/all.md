@@ -60,6 +60,7 @@
 |描述|* 当前是否与设定的NtripServer进行RTCM数据传输|
 |返回值|boolean（isConnected）|
 |云冠|不支持|
+
 ##INFO
 ### NtripAuthInfo
  * ntrip服务器身份验证
@@ -90,4 +91,5 @@
 |ntripServiceCode|RTK网络服务返回码|
 |nmeaGGA|飞行器NMEA报文-GGA|
 |posType|当前RTK定位状态|
+
 ##ENUM
