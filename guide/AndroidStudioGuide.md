@@ -17,13 +17,17 @@ allprojects {
 			...
             maven {
                 allowInsecureProtocol = true
-                url 'http://maven.ronny.zone:8081/repository/geoai'
+                url 'http://rtk.geoai.com:8081/repository/geoai'
+                credentials {
+                    username 'dev'
+                    password 'dev'
+                }
             }
 			maven { url 'https://jitpack.io' }
 		}
 	}
 ```
-2. 添加dependency依赖
+2. 添加dependency依赖(请在发布记录中获取版本号信息)
 ```groovy
 	dependencies {
 	        implementation 'com.geoai.mavlink:mavsdk***'
